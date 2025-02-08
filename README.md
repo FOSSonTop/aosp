@@ -1,4 +1,4 @@
 # docs
 Android Documentation
 
-Content of the [wiki](https://opendroid.pugzarecute.com)
+Content of the [wiki](https://fosson.top/aosp)

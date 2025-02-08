@@ -1,35 +1,36 @@
-# Building Android from start to finish
+---
+# https://vitepress.dev/reference/default-theme-home-page
+layout: home
 
-## Getting started
+hero:
+  name: "FOSSonTop"
+  text: "AOSP Docs"
+  actions:
+    - theme: brand
+      text: Add Content to Docs
+      link: https://github.com/FOSSonTop/aosp
+    - theme: alt
+      text: Go Back
+      link: ../index
 
-Earlier, Cirrus CI gave the ROM Builders community servers for OSS developement of Android builds, as these builds need a lot of resources that most people don't have lying around, like double digit RAM requirements (GB), triple digit storage requirements (GB), a capable processor, a specific Linux environment, etc.
-
-Cirrus CI has discontinued ROM Builders around Nov 2023. Now, [crave.io](https://crave.io) is providing Build Servers with a pretty similar Queue System. It is also a lot more flexible as it allows custom commands, has Docker image support, allows entering into build storage without starting a build, etc.
-
-This guide attempts to help new and old users with Android development and using crave.io through Devspace CLI and alternatively, Github Actions.
-
-### Crave Resources
-
-Here are some useful guides, links and write-ups for using Crave.io resources for building android ROMs:
-
-- [Crave Devspaces CLI](/wiki/Crave_Devspace)
-- [Crave Devspaces CLI - Rules](/wiki/Crave_Rules)
-- [Crave Devspaces CLI - Additional Tips and Tricks](/wiki/Crave_Tricks)
-- [Crave Devspaces CLI - Signing Builds(Advanced/WIP)](/wiki/Crave_Signing)
-- [Crave AOSP Builder (Github Actions)](https://github.com/sounddrill31/crave_aosp_builder)
+#features:
+#  - icon: We'll fill these later as we're doing the migration
+#    title: 
+#    link: 
+---
 
 ### Information and Guides
 
 Here are some general links and guides:
 
-- [Building 101](/wiki/Building_101)
-- [Glossary of key terms](/wiki/Glossary)
-- [Debugging/Taking Logs](/wiki/Debugging)
+- [Building 101](./wiki/Building_101)
+- [Glossary of key terms](./wiki/Glossary)
+- [Debugging/Taking Logs](./wiki/Debugging)
 - IMY's Bringup Guides
-  - [Intro](/wiki/imy-bringup/intro)
-    - [Episode 1](/wiki/imy-bringup/Episode-1/bringup)
-      - [Glossary/Lore Deep Dive](/wiki/imy-bringup/Lore-Explanation/filler_ep1)
-- [Notes for Samsung Exynos Devices](/wiki/Exynos_Notes)
+  - [Intro](./wiki/imy-bringup/intro)
+    - [Episode 1](./wiki/imy-bringup/Episode-1/bringup)
+      - [Glossary/Lore Deep Dive](./wiki/imy-bringup/Lore-Explanation/filler_ep1)
+- [Notes for Samsung Exynos Devices](./wiki/Exynos_Notes)
 
 ### Useful Resources
 
@@ -37,7 +38,7 @@ Here, we have some more useful resources:
 
 #### English Language
 - [Google's AOSP Build Guide](https://source.android.com/docs/setup/build/building)
-- [Lineage Build Guide](https://wiki.lineageos.org/devices/bacon/build)
+- [Lineage Build Guide](https:/./wiki.lineageos.org/devices/bacon/build)
 - [Divest OS (EOL) Build Guide](https://web.archive.org/web/20241223172341/https://divestos.org/pages/build)
 - [Lopestom's Bringup guides](https://gist.github.com/lopestom)
 - [RealOGs Bringup Guide](https://blog.realogs.in/android-device-tree-bringup)
@@ -48,7 +49,7 @@ Here, we have some more useful resources:
 - [AlaskaLinuxUser Youtube](https://www.youtube.com/channel/UCnGqG_jyyXmTzdamBpKfeHA)
 - [AlaskaLinuxUser Blog](https://alaskalinuxuser3.ddns.net)
 - [Awesome Android AOSP](https://github.com/Akipe/awesome-android-aosp/blob/main/readme.md)
-- [LineageOS Vendor Tree Guide](https://wiki.lineageos.org/proprietary_blobs.html)
+- [LineageOS Vendor Tree Guide](https:/./wiki.lineageos.org/proprietary_blobs.html)
 
 #### Turkish Language
 - [Yusuf İpek's Build Guide](https://yusufipek.me/custom-rom-derleme-rehberi/)
@@ -60,7 +61,7 @@ Here, we have some more useful resources:
 
 Here are resources useful for GSI developers and users:
 
-- [Phhusson's Treble-Experimentations](https://github.com/phhusson/treble_experimentations/wiki)
+- [Phhusson's Treble-Experimentations](https://github.com/phhusson/treble_experimentations./wiki)
 
 ### Signing Guides(Non-Crave)
 
@@ -69,7 +70,7 @@ Here are some guides on signing builds:
 
 - [Inline Guide for Dev-Keys by A2L5E0X1](https://gist.github.com/A2L5E0X1/54cb1b3a49030a9ebf8608b4e68073f5)
 - [Inline Guide by CrDroid](https://crdroid.net/blog/2024-06-01-sign-your-crDroid-builds-and-keep-play-integrity-happy)
-- [Detailed Guide by LineageOS](https://wiki.lineageos.org/signing_builds)
+- [Detailed Guide by LineageOS](https:/./wiki.lineageos.org/signing_builds)
 - [Detailed Guide by AOSP](https://source.android.com/docs/core/ota/sign_builds)
 
 ### SELinux Guides
@@ -101,4 +102,4 @@ Here, you can find some useful scripts to make things easier while developing
 
 ## Chat Groups
 
-- [Get Help](/wiki/Get_Help)
+- [Get Help](./wiki/Get_Help)

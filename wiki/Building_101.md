@@ -1,10 +1,10 @@
 # Building 101
 
 This guide aims to teach users about the basics of android building.
-If you want to build A12+ for devices not using linux 4.4 and up please refer to [Building android for legacy devices](/wiki/Building_android_for_legacy_devices)
-For versions unsupported by AOSP refer to [Building Legacy Android](/wiki/Building_legacy_android)
+If you want to build A12+ for devices not using linux 4.4 and up please refer to [Building android for legacy devices](./Building_android_for_legacy_devices)
+For versions unsupported by AOSP refer to [Building Legacy Android](./Building_legacy_android)
 
-Do not follow this guide inside Crave Devspace CLI, follow [this](/wiki/Crave_Devspace) instead because this guide shows things that are against [Devspace Rules](/wiki/Crave_Rules)
+Do not follow this guide inside Crave Devspace CLI, follow [this](./Crave_Devspace) instead because this guide shows things that are against [Devspace Rules](./Crave_Rules)
 
 ## Syncing AOSP Source code
 
@@ -198,4 +198,4 @@ The built rom is stored in `out/target/product/YOUR DEVICE CODENAME`.
 Depending on which target you chose, the files here will be different.
 Simply share your *.img files or the latest .zip file in that folder. Please ensure to have your build(s) thoroughly tested before you publicly release them.
 
-If your rom does not boot, ask other maintainers for your device if your device needs specific patches or refer to [Debugging](/wiki/Debugging) in order to grab logs.
+If your rom does not boot, ask other maintainers for your device if your device needs specific patches or refer to [Debugging](./Debugging) in order to grab logs.

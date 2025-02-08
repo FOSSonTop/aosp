@@ -1,4 +1,4 @@
-For basic building instructions refer to [Building 101](/wiki/Building_101)
+For basic building instructions refer to [Building 101](./Building_101)
 and incorporate the below patches after syncing or use LineageOS-UL.
 
 The following article pertains to the optimization of legacy devices,
