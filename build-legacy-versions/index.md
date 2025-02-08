@@ -1,4 +1,4 @@
-For basic building instructions refer to [Building 101](../Building_101)
+For basic building instructions refer to [Building 101](../building-101/index.md)
 and incorporate the below patches after syncing or use lin-* forks.
 
 Old Android versions can be pretty difficult to build nowadays and thus this guide was created so that you can do just that.
