@@ -24,7 +24,10 @@ features:
     link: ./building-for-ultralegacy-devices
   - title: Information And Guides
     description: Simple Index of Guides and tidbits
-    link: ./info
+    link: ./info/Additional_Resources
+  - title: Remote Build Execution Guide
+    description: A guide on how to use Bazel's Remote Build Exectuion feature to build on lower end devices
+    link: ./remote-build-execution/1.-introduction
   - title: Get Help
     description: Simple Index of places where you can try going to when you need help.
     link: ./help
