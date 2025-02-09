@@ -26,7 +26,7 @@ features:
     details: Simple Index of Guides and tidbits
     link: ./info/Additional_Resources
   - title: Remote Build Execution Guide
-    details: A guide on how to use Bazel's Remote Build Exectuion feature to build on lower end devices
+    details: A guide on how to use reclient for remote builds and remote caching on lower end devices
     link: ./remote-build-execution/1.-introduction
   - title: Get Help
     details: Simple Index of places where you can try going to when you need help.
