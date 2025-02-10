@@ -6,9 +6,9 @@ Here are some general links and guides:
 - [Glossary of key terms](./Glossary)
 - [Debugging/Taking Logs](../building-101/debugging)
 - IMY's Bringup Guides
-  - [Intro](../archive/imy-bringup/index.md)
-    - [Episode 1](../archive/imy-bringup/Episode-1/bringup.md)
-      - [Glossary/Lore Deep Dive](../archive/imy-bringup/Lore-Explanation/filler_ep1.md)
+  - [Intro](../old-archive/imy-bringup/index.md)
+    - [Episode 1](../old-archive/imy-bringup/Episode-1/bringup.md)
+      - [Glossary/Lore Deep Dive](../old-archive/imy-bringup/Lore-Explanation/filler_ep1.md)
 - [Notes for Samsung Exynos Devices](./Exynos_Notes)
 
 ### Useful Resources
