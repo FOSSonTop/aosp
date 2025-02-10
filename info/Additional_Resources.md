@@ -1,5 +1,6 @@
-### Information and Guides
+### Additional Resources
 
+<!-- 
 Here are some general links and guides:
 
 - [Building 101](../building-101/)
@@ -12,6 +13,7 @@ Here are some general links and guides:
 - [Notes for Samsung Exynos Devices](./Exynos_Notes)
 
 ### Useful Resources
+-->
 
 Here, we have some more useful resources:
 
@@ -81,4 +83,4 @@ Here, you can find some useful scripts to make things easier while developing
 
 ## Chat Groups
 
-- [Get Help](../help/)
+- [Get Help](../help.md)

@@ -15,16 +15,16 @@ hero:
 features:
   - title: Build Guide
     description: Simple Android Build Guide with General steps to get started.
-    link: ./building-101
+    link: ./building-101/introduction
   - title: Build Legacy
     description: Guide to build legacy android versions.
-    link: ./build-legacy-versions
+    link: ./building-legacy-aosp
   - title: Build for Ultra Legacy
-    description: Guide to build newer versions for legacy devices.
-    link: ./building-for-ultralegacy-devices
+    description: Patches to build modern AOSP for older devices.
+    link: ./building-for-ultralegacy-devices/Patches.md
   - title: Information And Guides
     description: Simple Index of Guides and tidbits
-    link: ./info
+    link: ./info/Additional_Resources
   - title: Get Help
     description: Simple Index of places where you can try going to when you need help.
     link: ./help
@@ -34,10 +34,11 @@ features:
 #    link: 
 ---
 
-To build android, you need a server. Often times, these are paid.
+<!-- To build android, you need a server. Often times, these are paid.
 
-Here are some options:
+#Here are some options:
 
 - foss.crave.io (free)
 - Google Cloud (paid, with free trial)
+-->
 
