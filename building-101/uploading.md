@@ -2,9 +2,7 @@
 order: 3
 ---
 
-# Building 101
-
-## Sharing the build
+# Sharing the build
 
 The built rom is stored in `out/target/product/YOUR DEVICE CODENAME`. 
 (eg. out/target/product/bacon)

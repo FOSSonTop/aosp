@@ -1,17 +1,8 @@
-### Information and Guides
+---
+title: Useful Resources
+---
 
-Here are some general links and guides:
-
-- [Building 101](../building-101/)
-- [Glossary of key terms](./Glossary)
-- [Debugging/Taking Logs](../building-101/debugging)
-- IMY's Bringup Guides
-  - [Intro](../old-archive/imy-bringup/index.md)
-    - [Episode 1](../old-archive/imy-bringup/Episode-1/bringup.md)
-      - [Glossary/Lore Deep Dive](../old-archive/imy-bringup/Lore-Explanation/filler_ep1.md)
-- [Notes for Samsung Exynos Devices](./Exynos_Notes)
-
-### Useful Resources
+# Useful Resources
 
 Here, we have some more useful resources:
 
@@ -81,4 +72,4 @@ Here, you can find some useful scripts to make things easier while developing
 
 ## Chat Groups
 
-- [Get Help](../help/)
+- [Get Help](../info/get-help)

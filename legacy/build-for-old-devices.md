@@ -1,4 +1,6 @@
-For basic building instructions refer to [Building 101](../building-101/index.md)
+# Patches for building modern AOSP for old devices
+
+For basic building instructions refer to [Building 101](../building-101/)
 and incorporate the below patches after syncing or use LineageOS-UL.
 
 The following article pertains to the optimization of legacy devices,

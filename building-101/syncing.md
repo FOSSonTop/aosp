@@ -2,10 +2,9 @@
 order: 1
 ---
 
-# Building 101
-## Syncing AOSP Source code
+# Syncing AOSP Source code
 
-### Setup: Installing `repo` and other dependencies
+## Setup: Installing `repo` and other dependencies
 
 Repo is a tool developed by google to help manage the thousands of git repos used in a project like AOSP.
 
@@ -60,7 +59,7 @@ To further increase the number of cached files at the cost of slight decompressi
 ccache -o compression=true
 ```
 
-### Initialising and syncing source
+## Initialising and syncing source
 
 1. Find the manifest of your preferred android fork. This guide will be using LineageOS as an example.
 
@@ -104,7 +103,7 @@ In case you get RPC errors, try reducing the -j argument to something like four.
 
 Excellent! You have now successfully cloned android!
 
-### Cloning device repositories.
+## Cloning device repositories.
 
 In order to build android for a device, you must first clone a few things:
 

@@ -2,8 +2,7 @@
 order: 2
 ---
 
-# Building 101
-## Building Time!
+# Building Time!
 
 1. Run
 ```

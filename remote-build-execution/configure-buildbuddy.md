@@ -2,11 +2,9 @@
 order: 2
 ---
 
-# Building Android with Remote Build Execution (RBE)
+# Configuration for BuildBuddy
 
-## Configuration for BuildBuddy
-
-### 1. Obtain Your BuildBuddy API Key
+## 1. Obtain Your BuildBuddy API Key
 
 1.  **Sign In:** Go to [buildbuddy.io](https://buildbuddy.io/) and sign in with your Google or GitHub account.
 2.  **Quickstart:** Navigate to the "Quickstart" section in your BuildBuddy dashboard.
@@ -21,7 +19,7 @@ order: 2
     *   Note the address after `--bes_backend=`. You only need the part *after* `grpcs://`, e.g., `your-instance.buildbuddy.io`.
 
 
-### 2. Setup Environment variables for BuildBuddy
+## 2. Setup Environment variables for BuildBuddy
 
 1. **Setup the Variables** Add this to your build/envsetup.sh or export them manually:
   ```bash # --- BuildBuddy Connection Settings ---
@@ -31,5 +29,5 @@ order: 2
     export RBE_service_no_auth=true
    ```
 
-### 3. **Important Notes**
+## 3. **Important Notes**
    * To get access to a shared cache, please contact @NopeNopeGuy, you'll get much faster first builds and it will reduce the load on BuildBuddy's server.

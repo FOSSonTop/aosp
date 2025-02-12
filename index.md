@@ -18,10 +18,10 @@ features:
     link: ./building-101
   - title: Build Legacy
     details: Guide to build legacy android versions.
-    link: ./building-legacy-aosp
+    link: ./legacy/building-legacy-aosp
   - title: Build for Ultra Legacy
     details: Guide to build newer versions for legacy devices.
-    link: ./building-for-ultralegacy-devices
+    link: ./legacy/building-for-old-devices
   - title: Information And Guides
     details: Simple Index of Guides and tidbits
     link: ./info/Additional_Resources
@@ -30,7 +30,7 @@ features:
     link: ./remote-build-execution/1.-introduction
   - title: Get Help
     details: Simple Index of places where you can try going to when you need help.
-    link: ./help
+    link: ./info/get-help
 #features:
 #  - icon: We'll fill these later as we're doing the migration
 #    title: 

@@ -2,13 +2,11 @@
 order: 4
 ---
 
-# Building Android with Remote Build Execution (RBE)
-
-## Results
+# Results
 
 These results demonstrate the potential build time improvements with RBE.
 
-### System 1: 16GB RAM, 8 Cores
+## System 1: 16GB RAM, 8 Cores
 
 *   **Specs:** AMD EPYC 9634 8-Core, 16GB RAM, KVM Server
 
@@ -25,7 +23,7 @@ These results demonstrate the potential build time improvements with RBE.
     ![result2](https://github.com/user-attachments/assets/4a65667b-876d-4d28-b3ba-f3611414bda8)
     *System 1 Build Time (everything): 1 hour 27 minutes 43.496 seconds. RBE Stats: down 33.48 GB, up 14.86 GB, 90889 cache hits, 4289 remote executions, 121 local fallbacks.*
 
-### System 2: 8GB RAM, 4 Cores
+## System 2: 8GB RAM, 4 Cores
 
 *   **Specs:** Intel Core i5-6500T, 8GB RAM, 48GB ZRAM, BTRFS, CachyOS
 

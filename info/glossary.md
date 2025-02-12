@@ -1,3 +1,5 @@
+# Glossary
+
 The following are some commonly used acronyms in android development.
 
 - TEE: Trusted Execution Environment

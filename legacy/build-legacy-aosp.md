@@ -1,4 +1,6 @@
-For basic building instructions refer to [Building 101](../building-101/index.md)
+# Building Legacy AOSP
+
+For basic building instructions refer to [Building 101](../building-101/)
 and incorporate the below patches after syncing or use lin-* forks.
 
 Old Android versions can be pretty difficult to build nowadays and thus this guide was created so that you can do just that.

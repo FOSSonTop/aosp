@@ -1,4 +1,4 @@
-# Well, that didn't work: Getting Help
+# Getting Help
 
 When things dont work, it may be frustrating. 
 
@@ -14,11 +14,11 @@ If you think that this is not a device bug but is a ROM side bug, make sure to a
 
 Else, consult the communities below
 
-### Crave.io Community
+## Crave.io Community
 - [Discord](https://discord.crave.io)(Crave Only)
 - [Telegram](https://t.me/ROM_builders)(ROM Builders telegram, you can ask general questions here too)
 
-### Other Useful Communities
+## Other Useful Communities
 
 #### Telegram
 - [AndroidRomDevelopment](https://t.me/alaskalinuxuser_romdevelopment)
@@ -37,7 +37,7 @@ Else, consult the communities below
 #### Discord
 - [XDA Discord](https://discord.com/invite/e4v8qtkcBw)
 
-### General Etiquette
+# General Etiquette
 Also check out [RFC 1855 - Netiquette Guidelines](https://datatracker.ietf.org/doc/html/rfc1855)
 
 Because these are 3rd party chat groups, remember to follow these while/before asking for help:

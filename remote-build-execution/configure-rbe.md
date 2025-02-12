@@ -2,9 +2,9 @@
 order: 3
 ---
 
-# Building Android with Remote Build Execution (RBE)
+# Configuring RBE
 
-### 3. Set Environment Variables
+## 3. Set Environment Variables
 
 These environment variables configure `reclient` to use RBE. It's highly recommended to add these to your `build/envsetup.sh` file so they are automatically set each time you initialize your build environment.
 
