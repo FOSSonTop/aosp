@@ -24,10 +24,10 @@ features:
     link: ./legacy/build-for-old-devices
   - title: Information And Guides
     details: Simple Index of Guides and tidbits
-    link: ./info/Additional_Resources
+    link: ./info
   - title: Remote Build Execution Guide
     details: A guide on how to use reclient for remote builds and remote caching on lower end devices
-    link: ./remote-build-execution/1.-introduction
+    link: ./remote-build-execution
   - title: Get Help
     details: Simple Index of places where you can try going to when you need help.
     link: ./info/get-help
