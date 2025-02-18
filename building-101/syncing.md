@@ -9,15 +9,15 @@ order: 1
 Repo is a tool developed by google to help manage the thousands of git repos used in a project like AOSP.
 
 You must first install it on your computer/server.
-```
+```bash
 mkdir ~/bin && curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+x ~/bin/repo
 ```
 After that you should check if ~/bin is already in your PATH by doing
-```
+```bash
 printenv PATH|grep ~/bin
 ```
 if you do not get any output you have to add:
-```
+```bash
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
@@ -28,17 +28,17 @@ to ~/.profile or some other script that runs on shell creation.
 There are also some additional dependencies, which you need to install to build android.
 
 Arch Linux:
-```
+```bash
 sudo pacman -S repo base-devel git-lfs
 ```
 
 Debian / Ubuntu based distros:
-```
+```bash
 sudo apt install bc bison build-essential ccache curl flex g++-multilib gcc-multilib git git-lfs gnupg gperf imagemagick lib32ncurses5-dev lib32readline-dev lib32z1-dev liblz4-tool libncurses5 libncurses5-dev libsdl1.2-dev libssl-dev libwxgtk3.0-gtk3-dev libxml2 libxml2-utils lzop pngcrush rsync schedtool squashfs-tools xsltproc zip zlib1g-dev
 ```
 
 Fedora / Fedora based distros:
-```
+```bash
 sudo dnf install @development-tools android-tools automake bison bzip2 bzip2-libs ccache curl dpkg-dev flex gcc gcc-c++ git git-lfs glibc-devel.{x86_64,i686} gperf libstdc++.{x86_64,i686} libxcrypt-compat libxml2-devel libxslt lz4-libs lzop make maven ncurses ncurses-compat-libs ncurses-devel.{x86_64,i686} openssl openssl-devel pngcrush python python3-virtualenv python3 python3-mako python-mako python-networkx schedtool squashfs-tools syslinux-devel unzip zip zlib zlib-devel
 ```
 
@@ -46,16 +46,16 @@ You might need to remove metadata_csum_seed and orhpan_file from /etc/mke2fs.con
 
 
 If you build a lot you should consider enabling ccache to save yourself some build time.
-```
+```bash
 export USE_CCACHE=1
 export CCACHE_EXEC=/usr/bin/ccache
 ```
 You should limit its size to something reasonable with the below command
-```
+```bash
 ccache -M 50G
 ```
 To further increase the number of cached files at the cost of slight decompression overhead you can enable compression.
-```
+```bash
 ccache -o compression=true
 ```
 
@@ -64,28 +64,28 @@ ccache -o compression=true
 1. Find the manifest of your preferred android fork. This guide will be using LineageOS as an example.
 
 2. Make a directory in which you want the android source code to be cloned
-    ```
+    ```bash
     mkdir Lineage
     ```
 
 3. Cd into the directory
-    ```
+    ```bash
     cd Lineage
     ```
 
 4. Run
-    ```
+    ```bash
     repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs
     ```
 
     Replace the url with the link to your preferred source of android. Replace the branch with the version of android you want to build. (Lineage 21 is A14, 20 is A13)
 
     - **Note #1**: If you get an error like `repo does not know who you are`, run 
-        ```
+        ```bash
         git config --global user.name "ProAndroidBuilder" # This can be any name, even your real name.
         ```
 
-        ```
+        ```bash
         git config --global user.email "android@veryrealemail.com" # This should be your email.
         ```
         Be warned, these info will be public if you start committing and pushing things.
@@ -93,7 +93,7 @@ ccache -o compression=true
     - **Note #2**: You can specify the `--depth=1` argument here to save storage space albeit at the loss of commit history.
 
 5. Run
-    ```
+    ```bash
     repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all) --retry-fetches=25
     ```
 
@@ -130,11 +130,11 @@ Run `git clone https://url -b branch(optional) path/to/folder`. The exact repos 
 
 Vendor repos are usually not listed, but try to get them from the same source as the device trees. For official Lineage OS this TheMuppets [GitLab](https://gitlab.com/the-muppets)/[GitHub](https://github.com/TheMuppets), but you can also extract the blobs manually if you have a build with that tree flashed onto your device by running:
 
-```
+```bash
 ./extract-files.sh
 ```
 or
-```
+```bash
 ./extract-files.py
 ```
 

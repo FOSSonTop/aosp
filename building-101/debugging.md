@@ -49,7 +49,7 @@ order: 4
 
     or if `GNU sed` is available on your system:
 
-    ```
+    ```bash
     sed -i 's/^ro\.adb\.secure=.*/ro.adb.secure=0/' build.prop
     sed -i 's/^ro\.debuggable=.*/ro.debuggable=1/' build.prop
     sed -i 's/^ro\.secure=.*/ro.secure=0/' build.prop
@@ -126,11 +126,11 @@ FBCon enables kernel output to the display. Use this as a second to the last res
 5) Adjust exposure and focus to make the text visible.
 
 6) Run
-    ```
+    ```bash
     adb reboot
     ```
     OR
-    ```
+    ```bash
     fastboot reboot
     ```
     depending on which mode you are in.

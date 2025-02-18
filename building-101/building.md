@@ -5,11 +5,11 @@ order: 2
 # Building Time!
 
 1. Run
-```
+```bash
 . build/envsetup.sh
 ```
 or
-```
+```bash
 source build/envsetup.sh
 ```
 
@@ -23,7 +23,7 @@ However, it is easier to use breakfast instead, like `breakfast PRODUCT VARIANT`
 
 - Release: Starting with A14 QPR2, you must include the `release` field. On A14 QPR2, this will look something like `ap1a`. On android `main` branch, this is `trunk_staging`.
    You can find out the release that the source ships by running:
-   ```
+   ```bash
    ls -1 -I trunk_staging -I root $(gettop)/build/release/aconfig/ | tail -n1
    ```
 
@@ -33,13 +33,13 @@ However, it is easier to use breakfast instead, like `breakfast PRODUCT VARIANT`
     - `user` is the least debuggable variant. Most OEMs ship their stock rom in this variant. Here debuggability is minimal.
 
 3. Run
-```
+```bash
 m -j$(nproc --all)
 ```
 - **Note #1**: If you get errors regarding memory, try reducing the -j argument. The j (jobs) argument is the number of threads which are used during compilation.
 
 - **Note #2**: If you want a flashable zip instead of raw images, run (for most roms)
-```
+```bash
 m bacon -j$(nproc --all)
 ```
 

@@ -8,22 +8,22 @@ Old Android versions can be pretty difficult to build nowadays and thus this gui
 Assuming you set up your build enviromnet already you still have to install legacy java and python for Android 8 and below. Newer versions ship the jdk inside the source.
 
 The [Lineage wiki](https://wiki.lineageos.org/devices/flounder/build/#java) has a comprehensive guide on that for ubuntu/-based distros and fedora also still ships openjdk 8 in their repos, which you can install by running:
-```
+```bash
 sudo dnf install java-1.8.0-openjdk java-1.8.0-openjdk-devel
 ```
 Note that you might need to use [update-alternatives](https://www.baeldung.com/linux/update-alternatives-command) to set the proper symlinks and use the old java/javac version.
 In addition to that you need to allow Tls V1/1.1 by removing TLSv1 and TLSv1.1 from jdk.tls.disabledAlgorithms within /etc/java-8-openjdk/security/java.security on debian based distros.
-```
+```bash
 sudo ln -sf /usr/share/crypto-policies/LEGACY/java.txt /etc/crypto-policies/back-ends/java.config;
 ```
 works on fedora/-based distros and does the same thing
 
 You should verify that
-```
+```bash
 java --version
 ```
 and
-```
+```bash
 javac --version
 ```
 outputs something like openjdk/javac 1.8 for Android 7 and 8
@@ -32,13 +32,13 @@ outputs something like openjdk/javac 1.8 for Android 7 and 8
 Next is python. You need python 2 to be set as default for Android 9 and below and python 3 for Android 10 and up.
 You may need to manually install the python2 package and symlink it to python using [update-alternatives](https://www.baeldung.com/linux/update-alternatives-command) just like java.
 Verify the version once again using
-```
+```bash
 python --version
 ```
 The output should be python 2.7.xx
 
 Now run (A7/8)
-```
+```bash
 export LC_ALL=C && export ANDROID_JACK_VM_ARGS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4G"
 ```
 and continue the build as usual.
