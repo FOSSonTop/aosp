@@ -24,7 +24,7 @@ However, it is easier to use breakfast instead, like `breakfast PRODUCT VARIANT`
 - Release: Starting with A14 QPR2, you must include the `release` field. On A14 QPR2, this will look something like `ap1a`. On android `main` branch, this is `trunk_staging`.
    You can find out the release that the source ships by running:
    ```bash
-   ls -1 -I trunk_staging -I root $(gettop)/build/release/aconfig/ | tail -n1
+   find $(gettop)/build/release/aconfig/* -maxdepth 0 -type d -name "[a-z][a-z][0-9][a-z]" -printf '%f\n' | tail -n1
    ```
 
 - Variant: Variant is the type of build you want to build.
