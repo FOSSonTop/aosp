@@ -18,7 +18,7 @@ features:
     link: ./building-101
   - title: Build Legacy
     details: Guide to build legacy android versions.
-    link: ./legacy/build-legacy-aosp
+    link: ./legacy/build-legacy-android
   - title: Build for Ultra Legacy
     details: Guide to build newer versions for legacy devices.
     link: ./legacy/build-for-old-devices
