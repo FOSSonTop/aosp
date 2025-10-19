@@ -14,7 +14,7 @@ These environment variables configure `reclient` to use RBE. It's highly recomme
 # --- Enable RBE and General Settings ---
 export USE_RBE=1
 export RBE_DIR="path/to/reclient"                      # Path to the extracted reclient directory (relative or absolute)
-export NINJA_REMOTE_NUM_JOBS=72                        # Number of parallel remote jobs (adjust based on your RAM, AOSP default is 500)
+export NINJA_REMOTE_NUM_JOBS=256                        # Number of parallel remote jobs (adjust based on your RAM, AOSP default is 500)
 
 # --- Unified Downloads/Uploads (Recommended) ---
 export RBE_use_unified_downloads=true
@@ -56,16 +56,20 @@ export RBE_LINT=1
 export RBE_JAVA_POOL=default
 export RBE_METALAVA_POOL=default
 export RBE_LINT_POOL=default
+
+# --- Timeouts ---
+export RBE_reclient_timeout=60m
+export RBE_exec_timeout=10m
 ```
 
 *   **`USE_RBE=1`**: Enables RBE.
 *   **`RBE_DIR`**: The path to your extracted `reclient` directory.
 *   **`*_EXEC_STRATEGY`**: Controls how different build steps are handled. `remote_local_fallback` means try remotely first, then fall back to local execution if the remote execution fails.
 *   **`RBE_*=1`**: Enables RBE for specific build tools.
-*   **`NINJA_REMOTE_NUM_JOBS`**: The number of parallel jobs to run remotely. Start with 72 and increase if you have more RAM. 128 should be safe for 16GB RAM systems. You can go higher (e.g., 500) if you have significantly more RAM.
+*   **`NINJA_REMOTE_NUM_JOBS`**: The number of parallel jobs to run remotely. Start with 256 and increase if you have more RAM. 128 should be safe for 16GB RAM systems. You can go higher (e.g., 500) if you have significantly more RAM.
 *   **`RBE_*_POOL`**: Specifies the resource pool to use. The `default` pool is usually sufficient.
+*   **`RBE_*_timeout`**: Sets a timeout for reclient. Sometimes reclient just dies for hours.
 
 **Important Notes:**
 
-*   Make sure to switch **`RBE_CXX_LINKS_EXEC_STRATEGY`** to **`local`** after your first build is done to reduce build times. If rebuilding C/C++ targets is needed change to **`remote_local_fallaback`**
 *   Many of these options are not officially documented by Google and were discovered through AOSP source code analysis.
