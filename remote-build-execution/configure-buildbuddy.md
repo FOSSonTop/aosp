@@ -31,3 +31,4 @@ order: 2
 
 ## 3. **Important Notes**
    * To get access to a shared cache, please contact @NopeNopeGuy, you'll get much faster first builds and it will reduce the load on BuildBuddy's server.
+   * If you are not using BuildBuddy but rather your own locally hosted cache, make sure to set `RBE_service_no_security` to `true` to make reclient not use TLS.
