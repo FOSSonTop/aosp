@@ -1,3 +1,6 @@
+---
+order: 1
+---
 # Tips and Tricks
 
 ## Using your phone as a webcam

@@ -1,3 +1,6 @@
+---
+order: 1
+---
 # Tips and Tricks
 
 ## 1. Working on Low-RAM Machines with zram

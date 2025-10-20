@@ -1,3 +1,6 @@
+---
+order: 2
+---
 # Tips and Tricks
 
 ## 2. Reducing Storage Requirements with BTRFS Compression
