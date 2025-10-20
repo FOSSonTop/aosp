@@ -28,6 +28,9 @@ features:
   - title: Remote Build Execution Guide
     details: A guide on how to use reclient for remote builds and remote caching on lower end devices
     link: ./remote-build-execution
+  - title: Tips and Tricks
+    details: General Android/AOSP related tips-and-tricks
+    link: ./tips-and-tricks
   - title: Get Help
     details: Simple Index of places where you can try going to when you need help.
     link: ./info/get-help
