@@ -66,6 +66,10 @@ There are various ways to use your phone as a webcam. This guide shows you how t
         ```bash
         sudo modprobe v4l2loopback-dkms
         ```
+        or
+        ```bash
+        sudo modprobe v4l2loopback
+        ```
 
 3.  **Run Scrcpy**
 
@@ -85,12 +89,11 @@ There are various ways to use your phone as a webcam. This guide shows you how t
 
     1. Test your webcam:
 
-      ```bash
-      ffplay -i /dev/video<insert device number here> or vlc v4l2:///dev/video<insert device number here> or mpv /dev/video<insert device number here>
-      ```
+       ```bash
+       ffplay -i /dev/video<insert device number here> or vlc v4l2:///dev/video<insert device number here>
+       ```
     2. Normal Use:
-
-      Open any web browser and visit https://webcamtests.com/ to confirm it works on a web browser too
+       Open any web browser and visit https://webcamtests.com/ to confirm it works on a web browser too
 
 ### Debugging
 
@@ -109,6 +112,10 @@ There are various ways to use your phone as a webcam. This guide shows you how t
 
    Try loading the module in exclusive_caps mode:
 
+   ```bash
+   sudo modprobe v4l2loopback-dkms exclusive_caps=1
+   ```
+   or
    ```bash
    sudo modprobe v4l2loopback exclusive_caps=1
    ```
