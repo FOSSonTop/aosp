@@ -1,6 +1,6 @@
 # Tips and Tricks
 
-## 1. Reducing Storage Requirements with BTRFS Compression
+## 2. Reducing Storage Requirements with BTRFS Compression
 
 BTRFS compression can dramatically reduce the storage space needed for AOSP builds.
 

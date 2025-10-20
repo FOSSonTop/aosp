@@ -1,6 +1,6 @@
 # Tips and Tricks
 
-## 2. Working on Low-RAM Machines with zram
+## 1. Working on Low-RAM Machines with zram
 
 AOSP builds typically require 32GB+ of RAM.  You can use `zram` (compressed RAM) to build on systems with less physical RAM (e.g., 8GB).
 
