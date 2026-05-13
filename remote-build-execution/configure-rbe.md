@@ -13,7 +13,7 @@ These environment variables configure `reclient` to use RBE. It's highly recomme
 ```bash
 # --- Enable RBE and General Settings ---
 export USE_RBE=1
-export RBE_DIR="path/to/reclient"                      # Path to the extracted reclient directory (relative or absolute)
+export RBE_DIR="path/to/fix/output"                     # Set this to the output folder produced by the fix script
 export NINJA_REMOTE_NUM_JOBS=256                        # Number of parallel remote jobs (adjust based on your RAM, AOSP default is 500)
 
 # --- Unified Downloads/Uploads (Recommended) ---
@@ -63,7 +63,7 @@ export RBE_exec_timeout=10m
 ```
 
 *   **`USE_RBE=1`**: Enables RBE.
-*   **`RBE_DIR`**: The path to your extracted `reclient` directory.
+*   **`RBE_DIR`**: Set this to the **output folder** produced by the fix script (`build_patched_reclient.sh`). This directory contains the patched `reclient` bundle the build system needs.
 *   **`*_EXEC_STRATEGY`**: Controls how different build steps are handled. `remote_local_fallback` means try remotely first, then fall back to local execution if the remote execution fails.
 *   **`RBE_*=1`**: Enables RBE for specific build tools.
 *   **`NINJA_REMOTE_NUM_JOBS`**: The number of parallel jobs to run remotely. Start with 256 and increase if you have more RAM. 128 should be safe for 16GB RAM systems. You can go higher (e.g., 500) if you have significantly more RAM.

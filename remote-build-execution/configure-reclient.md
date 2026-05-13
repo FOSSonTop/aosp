@@ -2,8 +2,33 @@
 order: 1
 ---
 
-# Download and Configure `reclient`
+# Setup RBE
 
-1.  **Download:** Download the `reclient` package from [this link](https://chrome-infra-packages.appspot.com/p/infra/rbe/client/linux-amd64/+/latest). This is a pre-built version of Google's `reclient` tool.
-2.  **Extract:** Extract the downloaded archive to a directory within your ROM's source tree. For example, you could create a directory called `rbe` in the root of your AOSP directory and extract it there. It is important to keep the extracted directory structure.
-3.  **Note Path:** Remember the *relative* path from your AOSP root to this directory (e.g., `rbe`) or the absolute path.
+This replaces the old manual `reclient` download steps. It uses a patched `reclient` bundle.
+
+## 1. Apply the Fix
+
+Run these commands from the **root of your Android source tree** (where you normally run `source build/envsetup.sh`):
+
+0. **Clone the fix repository:**
+   ```bash
+   git clone https://github.com/Rares6567/new_rbe_fix tutorial
+   ```
+
+1. **Build the patched reclient bundle:**
+   ```bash
+   bash tutorial/scripts/build_patched_reclient.sh .
+   ```
+   *Note the path of the output folder printed by the script (usually `tutorial/output` or similar). You will need it for `RBE_DIR`.*
+
+2. **Patch the build system defaults:**
+   ```bash
+   patch -p1 < tutorial/patches/android-rbe-buildbuddyfix-defaults.patch
+   ```
+
+## 2. Next Steps
+
+After applying this fix:
+
+1. Set `RBE_DIR` to the **output folder path** produced by `build_patched_reclient.sh` (see Step 1 above).
+2. Proceed to [Configure BuildBuddy](configure-buildbuddy.md) and then [Configure Environment Variables](configure-rbe.md) to finish enabling RBE.
