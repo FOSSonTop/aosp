@@ -9,7 +9,7 @@ This documentation outlines how to configure and use Remote Build Execution (RBE
 
 ## Contents:
 
-1.  [Configure `reclient`](configure-reclient.md): Download and extract the `reclient` package.
+1.  [Configure `reclient`](configure-reclient.md): Prepare your source tree with a patched `reclient` bundle.
 2.  [Configure BuildBuddy (Optional)](configure-buildbuddy.md): Integrate with BuildBuddy for enhanced RBE.
 3.  [Configure RBE](configure-rbe.md): Set environment variables to enable and configure RBE.
 4.  [Build Normally](../building-101/building.md): Build AOSP as you normally do.

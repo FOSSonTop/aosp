@@ -21,7 +21,7 @@ order: 2
 
 ## 2. Setup Environment variables for BuildBuddy
 
-1. **Setup the Variables** Add this to your build/envsetup.sh or export them manually:
+1. **Setup the Variables:** Add this to your `build/envsetup.sh` or export them manually:
   ```bash # --- BuildBuddy Connection Settings ---
     export RBE_service="your-instance.buildbuddy.io:443"        # BuildBuddy instance address (without grpcs://, add the port 443)
     export RBE_remote_headers="x-buildbuddy-api-key=xxx"    # Your BuildBuddy API key
@@ -29,6 +29,8 @@ order: 2
     export RBE_service_no_auth=true
    ```
 
-## 3. **Important Notes**
-   * To get access to a shared cache, please contact @NopeNopeGuy, you'll get much faster first builds and it will reduce the load on BuildBuddy's server.
-   * If you are not using BuildBuddy but rather your own locally hosted cache, make sure to set `RBE_service_no_security` to `true` to make reclient not use TLS.
+## 3. Important Notes
+
+*   **Personal Cache:** The shared cache is currently unavailable. You must use your own personal BuildBuddy instance/account for caching.
+*   **Initial Build Performance:** Since you are starting with a fresh personal cache, your first few builds will be **slower**. During this phase, the system is primarily **uploading** build artifacts to your remote storage. 
+*   **Subsequent Builds:** Once your personal cache is populated, subsequent builds (or builds of similar branches) will become significantly faster as the system switches to **downloading** cached results instead of rebuilding locally.
